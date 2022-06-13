@@ -1,6 +1,13 @@
 const express = require("express");
-const router = express.Router;
+const router = express.Router();
 
-let products = [];
+
+router.get("/", ( req, res) => {
+    res.send("products");
+});
+router.post("/", ( req, res) => {});
+router.put("/", ( req, res) => {});
+router.delete("/", ( req, res) => {});
 
 module.exports = router;
+
