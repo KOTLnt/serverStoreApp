@@ -1,0 +1,40 @@
+.Login {
+    border: 2px solid var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 40px 20px 0px 20px;
+    background-color: var(--white-color);
+}
+
+
+
+.Bottom {
+    display: block;
+}
+
+.Bottom button {
+    height: 50px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: x-large;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid;
+    position: relative;
+    top: -20px;
+}
+ a:hover {
+    text-decoration: underline;
+}
+
+ a {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+

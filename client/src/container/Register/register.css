@@ -1,0 +1,40 @@
+
+.Register {
+    border: 2px solid var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 40px 20px 0px 20px;
+    background-color: var(--white-color);
+}
+
+.Register label {
+    flex: 1;
+    width: 120px;
+}
+
+.Register input {
+    width: 100%;
+    flex: 2;
+}
+
+.Register button {
+    font-weight: 900;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.Register a {
+    float: right ;
+    position: relative;
+    bottom: -10px;
+}
+
+.Register a :hover {
+    text-decoration: underline;
+}
