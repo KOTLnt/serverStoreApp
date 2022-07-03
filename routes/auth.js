@@ -4,6 +4,11 @@ const jwt = require("jsonwebtoken");
 
 const authController = require("../controllers/authController")
 
+
+/*Login */
+router.get("/login",  ( req, res, next) => {
+    res.json("users")
+})
 router.post("/login", async (req, res) => {
     const { phoneNumber, password } = req.body;
     const id = req.body.id;
@@ -11,13 +16,14 @@ router.post("/login", async (req, res) => {
     try {
         const user = await authController.login(phoneNumber, password);
         const token = jwt.sign({
+            phoneNumber: user.phoneNumber,
             id: user._id
-        }, "key",
-        {   
+        }, "LAVIE-CUSTOMER-TOKEN",
+        {    
             expiresIn: 300,
         })
         res.json({
-            user: user ,
+            phoneNumber: phoneNumber ,
             token: token
         });
     } catch(err) {
@@ -26,6 +32,8 @@ router.post("/login", async (req, res) => {
 
     
 });
+
+/*Register*/
 router.post("/register", async (req, res) => {
     const { phoneNumber, password } = req.body;
 

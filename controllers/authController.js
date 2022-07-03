@@ -1,4 +1,3 @@
-const jwt = require("jsonwebtoken");
 
 const { db } = require("../config/db");
 const { generate, verify } = require("../utils");

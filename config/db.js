@@ -13,4 +13,4 @@ const connectDB = async () => {
   db.users = database.collection("users");
 }
 
-module.exports = { connectDB, db };
+module.exports = { connectDB, db};

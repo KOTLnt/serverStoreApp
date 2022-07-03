@@ -31,7 +31,7 @@ const Header = () => {
             </ul>
             <ul className={css.nav_bar_right}>
                 <li>
-                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa fa-light fa-globe"></i>
                     <span>Thông báo</span>
                 </li>
                 <li>
